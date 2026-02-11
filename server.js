@@ -32,7 +32,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: process.env.API_URL || 'https://school-backend-production-ddc4.up.railway.app/api',
+        url: process.env.API_URL || 'https://school-backend-production-ddc4.up.railway.app/',
       },
     ],
     components: {
@@ -58,7 +58,7 @@ app.use('/books', bookRoutes);
 app.use('/users', userRoutes);
 
 // Health check (important for deployment)
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send('BookVerse API is running 🚀');
 });
 
