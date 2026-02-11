@@ -32,7 +32,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: process.env.API_URL || 'http://localhost:5000',
+        url: process.env.API_URL || 'https://school-backend-production-ddc4.up.railway.app/api',
       },
     ],
     components: {
